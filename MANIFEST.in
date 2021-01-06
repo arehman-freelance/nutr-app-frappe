@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include nutr_app *.css
+recursive-include nutr_app *.csv
+recursive-include nutr_app *.html
+recursive-include nutr_app *.ico
+recursive-include nutr_app *.js
+recursive-include nutr_app *.json
+recursive-include nutr_app *.md
+recursive-include nutr_app *.png
+recursive-include nutr_app *.py
+recursive-include nutr_app *.svg
+recursive-include nutr_app *.txt
+recursive-exclude nutr_app *.pyc
