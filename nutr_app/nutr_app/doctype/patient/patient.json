@@ -21,7 +21,32 @@
   "stateprovince",
   "postal_code",
   "parental_information_section",
-  "parental_information"
+  "parental_information",
+  "prenatal_history_section",
+  "prenatal_course",
+  "high_risk",
+  "risk_of_premature_parturition",
+  "risk_of_abortion",
+  "column_break_21",
+  "pregnancy_number",
+  "prenatal_diagnosis",
+  "birth_information_section",
+  "birth_weight",
+  "birth_weight_unit",
+  "birth_length",
+  "birth_length_unit",
+  "skin_to_skin_immediately",
+  "immediate_breastfeeding",
+  "history_resp_distress",
+  "column_break_33",
+  "apgars",
+  "baby_solid_food_start",
+  "baby_fresh_fruit",
+  "jaundice",
+  "sepsis",
+  "infant_hospitalization",
+  "patient_immunization_section",
+  "patient_immunization"
  ],
  "fields": [
   {
@@ -118,11 +143,146 @@
    "label": "Parental Information",
    "options": "Parental Information",
    "reqd": 1
+  },
+  {
+   "fieldname": "prenatal_history_section",
+   "fieldtype": "Section Break",
+   "label": "Prenatal History"
+  },
+  {
+   "fieldname": "prenatal_course",
+   "fieldtype": "Data",
+   "label": "Prenatal Course"
+  },
+  {
+   "fieldname": "pregnancy_number",
+   "fieldtype": "Int",
+   "label": "Pregnancy Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "high_risk",
+   "fieldtype": "Check",
+   "label": "High Risk"
+  },
+  {
+   "default": "0",
+   "fieldname": "risk_of_abortion",
+   "fieldtype": "Check",
+   "label": "Risk of Abortion"
+  },
+  {
+   "default": "0",
+   "fieldname": "risk_of_premature_parturition",
+   "fieldtype": "Check",
+   "label": "Risk of Premature Parturition"
+  },
+  {
+   "fieldname": "prenatal_diagnosis",
+   "fieldtype": "Small Text",
+   "label": "Prenatal Diagnosis"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "birth_information_section",
+   "fieldtype": "Section Break",
+   "label": "Birth information"
+  },
+  {
+   "fieldname": "birth_weight",
+   "fieldtype": "Float",
+   "label": "Birth Weight"
+  },
+  {
+   "fieldname": "birth_weight_unit",
+   "fieldtype": "Select",
+   "label": "Birth Weight Unit",
+   "options": "Kg\nlb"
+  },
+  {
+   "fieldname": "birth_length",
+   "fieldtype": "Float",
+   "label": "Birth Length"
+  },
+  {
+   "fieldname": "birth_length_unit",
+   "fieldtype": "Select",
+   "label": "Birth Length Unit",
+   "options": "cm\ninch"
+  },
+  {
+   "default": "0",
+   "fieldname": "skin_to_skin_immediately",
+   "fieldtype": "Check",
+   "label": "Skin to skin immediately"
+  },
+  {
+   "default": "0",
+   "fieldname": "immediate_breastfeeding",
+   "fieldtype": "Check",
+   "label": "Immediate Breastfeeding"
+  },
+  {
+   "default": "0",
+   "fieldname": "history_resp_distress",
+   "fieldtype": "Check",
+   "label": "History of Respiratory Distress"
+  },
+  {
+   "default": "0",
+   "fieldname": "jaundice",
+   "fieldtype": "Check",
+   "label": "Jaundice"
+  },
+  {
+   "fieldname": "apgars",
+   "fieldtype": "Data",
+   "label": "Apgars"
+  },
+  {
+   "default": "0",
+   "fieldname": "sepsis",
+   "fieldtype": "Check",
+   "label": "Sepsis"
+  },
+  {
+   "default": "0",
+   "fieldname": "infant_hospitalization",
+   "fieldtype": "Check",
+   "label": "Infant Required Hospitalization"
+  },
+  {
+   "fieldname": "baby_solid_food_start",
+   "fieldtype": "Data",
+   "label": "How old was the baby when starting solid foods"
+  },
+  {
+   "fieldname": "baby_fresh_fruit",
+   "fieldtype": "Data",
+   "label": "Does the baby eat fresh fruits"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "patient_immunization_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Immunization"
+  },
+  {
+   "fieldname": "patient_immunization",
+   "fieldtype": "Table",
+   "label": "Patient Immunization",
+   "options": "Patient Immunization"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-01-08 07:59:22.582942",
+ "modified": "2021-01-08 09:03:05.736951",
  "modified_by": "Administrator",
  "module": "Nutr App",
  "name": "Patient",
