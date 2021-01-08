@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "creation": "2021-01-07 10:11:21.666068",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parent_type",
+  "first_name",
+  "primary_language",
+  "marital_status",
+  "whats_app",
+  "district",
+  "dpi_number",
+  "migrant",
+  "primary_caregiver",
+  "column_break_10",
+  "date_of_birth",
+  "last_name",
+  "racial_identity",
+  "cell_phone",
+  "occupation",
+  "other_caregiver"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Parent Type",
+   "options": "\nMother\nFather\nGrand Mother\nGrand Father\nAunt\nUncle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "primary_language",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Primary Language",
+   "options": "Language",
+   "reqd": 1
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidow",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whats_app",
+   "fieldtype": "Data",
+   "label": "Whats App"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "dpi_number",
+   "fieldtype": "Data",
+   "label": "DPI Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "migrant",
+   "fieldtype": "Check",
+   "label": "Migrant"
+  },
+  {
+   "default": "0",
+   "fieldname": "primary_caregiver",
+   "fieldtype": "Check",
+   "label": "Primary Caregiver"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "racial_identity",
+   "fieldtype": "Link",
+   "label": "Racial Identity",
+   "options": "Racial Identity"
+  },
+  {
+   "fieldname": "cell_phone",
+   "fieldtype": "Data",
+   "label": "Cell Phone"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "description": "If there is a different caregiver please provide their information.",
+   "fieldname": "other_caregiver",
+   "fieldtype": "Data",
+   "label": "Other Caregiver"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-01-08 07:58:55.193664",
+ "modified_by": "Administrator",
+ "module": "Nutr App",
+ "name": "Parental Information",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

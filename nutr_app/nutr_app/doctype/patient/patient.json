@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "autoname": "PT.#####",
+ "creation": "2021-01-07 09:54:57.669290",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "clinic",
+  "patient_demographics_section",
+  "first_name",
+  "last_name",
+  "date_of_birth",
+  "home_address",
+  "city",
+  "country",
+  "column_break_9",
+  "photo",
+  "attach_photo",
+  "street",
+  "stateprovince",
+  "postal_code",
+  "parental_information_section",
+  "parental_information"
+ ],
+ "fields": [
+  {
+   "fieldname": "clinic",
+   "fieldtype": "Link",
+   "label": "Clinic",
+   "options": "Clinic",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_demographics_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Demographics"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "home_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Home Address ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "attach_photo",
+   "fieldtype": "Attach Image",
+   "label": "Attach Photo"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "stateprovince",
+   "fieldtype": "Data",
+   "label": "State/Province",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "parental_information_section",
+   "fieldtype": "Section Break",
+   "label": "Parental Information"
+  },
+  {
+   "fieldname": "parental_information",
+   "fieldtype": "Table",
+   "label": "Parental Information",
+   "options": "Parental Information",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-01-08 07:59:22.582942",
+ "modified_by": "Administrator",
+ "module": "Nutr App",
+ "name": "Patient",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Clinic Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
